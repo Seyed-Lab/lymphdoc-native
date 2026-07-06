@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "LymphDoc",
+    "slug": "lymphdoc",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "lymphdoc",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/droppi/droppi-happy.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F7FAFC"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.lymphdoc.app",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "LymphDoc kann Gesundheitsdaten lesen, um deine Therapie-Dokumentation zu vervollständigen."
+      }
+    },
+    "android": {
+      "package": "com.lymphdoc.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#F7FAFC"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "color": "#38BDF8"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
